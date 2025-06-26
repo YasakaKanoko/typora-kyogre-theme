@@ -6,7 +6,7 @@
 
 2. Fixed JSX syntax errors for proper display.
 
-   - Befor
+   - Before
 
      ![before](./img/before.png)
 
