@@ -1,19 +1,5 @@
 # 预览
 
-## 开发中
-
-- [x] outline
-- [ ] background
-- [ ] kbd
-- [ ] mermaid
-- [ ] toc
-- [ ] 代码
-- [ ] 列表
-- [ ] Task  List
-- [ ] 表格
-- [ ] 公式
-- [x] 脚注
-
 [TOC]
 
 ## 二级标题
@@ -83,6 +69,7 @@
 ```jsx
 import { useState } from 'react';
 
+// 行内注释
 export default function App() {
   const [count, setCount] = useState(0);
   
@@ -109,7 +96,6 @@ export default function App() {
       1. 嵌套列表项3
       2. 嵌套列表项4
 
-
 ### 无序列表
 
 - 列表项1
@@ -123,7 +109,7 @@ export default function App() {
 
 ### Task List
 
-- [ ] 未完成
+- [x] 未完成
 
 - [ ] 已完成
 
@@ -137,14 +123,15 @@ export default function App() {
 
 ![Acg](https://fastly.jsdelivr.net/gh/YasakaKanoko/charlotte@main/post/1752917116.webp)
 
-## 表格x
+## 表格
 
 | name   | value | Example |
-| ------ | ----- | ------- |
+| :----- | ----- | ------- |
 | auto   | 1     |         |
 | none   | 2     |         |
 | kimi   | 3     |         |
 | hajimi | 4     |         |
+|        |       |         |
 
 ## 公式
 
@@ -158,3 +145,5 @@ export default function App() {
 鲁迅[^1]
 
 [^1]: 鲁迅，原名周树人
+
+<kbd>Ctrl</kbd>+<kbd>F</kbd>
