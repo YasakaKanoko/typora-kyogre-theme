@@ -1,1 +1,19 @@
-/* 待定 */
+content {
+  /* 必应图床 */
+  /* background-image: url(https://api.timelessq.com/bing); */
+  background-image: url(../assets/1758799282.webp);
+  background-repeat: repeat;
+  background-position: -52px;
+}
+
+#write {
+  border-radius: 20px;
+  margin-top: 24px;
+  background-color: rgba(248, 249, 250, 0.6);
+  margin-bottom: 24px;
+  min-height: calc(100% - 48px);
+}
+
+body {
+  background-color: var(--bg-color);
+}
