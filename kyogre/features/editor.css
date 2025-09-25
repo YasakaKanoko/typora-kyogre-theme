@@ -1,30 +1,30 @@
 /* 大纲 */
 /* #region */
 #typora-sidebar {
-    background-color: var(--bg-color);
+  background-color: var(--bg-color);
 }
 
 .outline-content {
-    padding: 20px;
-    background-color: var(--bg-secondary-color);
+  padding: 20px;
+  background-color: var(--bg-secondary-color);
 }
 
 .outline-label:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .outline-item:hover {
-    background: var(--secondary-color);
-    color: var(--primary-color);
+  background: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 .outline-item:hover::before,
 .outline-item-active::before {
-    width: 6px;
+  width: 6px;
 }
 
 .outline-item-active .outline-expander {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 /* #endregion */
@@ -32,13 +32,13 @@
 /* 搜索框 */
 /* #region */
 #file-library-search-panel {
-    border-bottom: none;
+  border-bottom: none;
 }
 
 #file-library-search-panel input[type="search"] {
-    padding: 14px;
-    border-radius: 6px;
-    border-color: var(--primary-color);
+  padding: 14px;
+  border-radius: 6px;
+  border-color: var(--secondary-color);
 }
 
 /* #endregion */
@@ -46,17 +46,17 @@
 /* 左侧文件列表 */
 /* #region */
 #file-library-list-children {
-    padding: 0 14px;
+  padding: 0 14px;
 }
 
 .file-list-item.active {
-    border-radius: 10px;
-    background: var(--bg-secondary-color);
+  border-radius: 10px;
+  background: var(--bg-secondary-color);
 }
 
 .file-list-item:hover {
-    background: var(--secondary-color);
-    color: var(--primary-color);
+  background: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 /* #endregion */
@@ -64,53 +64,106 @@
 /* 滚动条 */
 /* #region */
 ::-webkit-scrollbar {
-    width: 10px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar:hover {
-    width: 10px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-thumb,
 ::-webkit-scrollbar-thumb:active {
-    border-radius: 5px;
-    background: var(--secondary-color);
-    width: 10px
+  border-radius: 5px;
+  background: var(--secondary-color);
+  width: 10px
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--bg-secondary-color);
+  background: var(--bg-secondary-color);
 }
 
 /* #endregion */
 
-/* 搜索框 Ctrl+F */
+/* 顶部搜索框 Ctrl+F */
 /* #region */
 #md-searchpanel .btn label {
-    color: var(--primary-color);
-    font-weight: bold;
+  color: var(--primary-color);
+  font-weight: bold;
 }
 
-div#md-searchpanel {
-    background: var(--bg-color);
+#md-searchpanel {
+  background: var(--bg-color);
 }
 
 #md-searchpanel .btn {
-    margin: 0 2px;
-    border-radius: 10px;
+  margin: 0 2px;
+  border-radius: 10px;
 }
 
 #md-searchpanel .btn:hover {
-    background: var(--secondary-color);
+  background: var(--secondary-color);
 }
 
 /* 查找和替换 */
 #md-searchpanel input {
-    border-radius: 6px;
+  border-radius: 6px;
 }
 
 #md-searchpanel input {
-    border-color: var(--primary-color);
+  border-color: var(--secondary-color);
+  box-shadow: none;
+}
+
+/* #endregion */
+
+/* 右侧菜单 */
+/* #region */
+.dropdown-menu,
+.menu-item-container a.menu-style-btn {
+  border-radius: 10px;
+  background-color: var(--bg-secondary-color);
+  backdrop-filter: blur(12px) saturate(1.3);
+  -webkit-backdrop-filter: blur(12px) saturate(1.3);
+  border: 1px solid var(--menu-bg-color);
+  box-shadow: 0 4px 6px -2px var(--secondary-color),
+    inset 0 1px 0 var(--menu-bg-color);
+  transition: background-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+#context-menu li a,
+#block-style-menu li a,
+#insert-menu a,
+#edit-menu a {
+  font-family: var(--main-font);
+  background-color: inherit;
+}
+
+#context-menu li a:hover,
+#block-style-menu li a:hover,
+#insert-menu a:hover,
+#edit-menu a:hover {
+  cursor: pointer;
+  background-color: var(--secondary-color);
+}
+
+.dropdown-menu .divider {
+  opacity: 0;
+}
+
+.ty-check:before {
+  color: var(--ty-check-color);
+}
+
+.ty-delete1:before {
+  color: var(--ty-delete1-color);
+}
+
+.ty-code:before {
+  color: var(--ty-code-color);
+}
+
+.ty-link-icon:before {
+  color: var(--primary-color);
 }
 
 /* #endregion */
