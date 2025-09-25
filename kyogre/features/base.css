@@ -113,7 +113,6 @@ h6 {
 
 /* #endregion */
 /* h1~h6 end*/
-
 p,
 blockquote,
 ul,
@@ -127,46 +126,6 @@ table {
 img {
   border-radius: 1rem;
 }
-
-/* List */
-/* #region */
-
-/* li > ol,
-li > ul {
-    margin: 0 0;
-}
-
-#write > ul:first-child,
-#write > ol:first-child {
-    margin-top: 30px;
-}
-
-
-li p.first {
-    display: inline-block;
-}
-
-ul,
-ol {
-    padding-left: 30px;
-}
-
-ul:first-child,
-ol:first-child {
-    margin-top: 0;
-}
-
-ul:last-child,
-ol:last-child {
-    margin-bottom: 0;
-} */
-/* List end */
-/* #endregion */
-
-
-
-
-
 
 /* 链接 */
 a {
