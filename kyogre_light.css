@@ -1,115 +1,59 @@
 @import './kyogre/features/font.css';
 @import './kyogre/features/base.css';
-@import './kyogre/features/background.css';
+/* @import './kyogre/features/background.css'; */
 @import './kyogre/features/blockquote.css';
 @import './kyogre/features/editor.css';
 @import './kyogre/features/code.css';
 @import './kyogre/features/kbd.css';
 @import './kyogre/features/list.css';
-@import './kyogre/features/mermaid.css';
+@import './kyogre/features/mathjax.css';
+@import './kyogre/features/toc.css';
 @import './kyogre/features/table.css';
 
 :root {
-    --code-font: 'Hasklig', "Fira Code", Consolas, Inconsolata, "Cascadia Code", Monaco, "Ubuntu Mono", monospace;
-    --main-font: 'jinkai', -apple-system, BlinkMacSystemFont, "Microsoft YaHei", Arial, "Helvetica Neue", Helvetica, sans-serif;
-    /* color */
-    --bg-color: #fff;
-    --bg-secondary-color: #f8f9fa;
-    --text-color: #333;
-    /* ↓这个是哪里来的? */
-    --write-bg-color: #fff;
-    /* main color */
-    --primary-color: #f06292;
-    --secondary-color: #fdebf1;
-    /* editor */
-
-
-
-    /* 链接 */
-    --link-text-color: #f06292;
-    /* 标题 */
-    /* ... */
-    /* 引用 */
-    --quote-border-color: #f06292;
-    --quote-text-color: #6a737d;
-    --quote-bg-color: #fdebf1;
-    --note-border-color: #3e69d7;
-    --note-bg-color: #e9eaff;
-    --tip-border-color: #03b736;
-    --tip-bg-color: #d5efe9;
-    --important-border-color: #8250df;
-    --important-bg-color: #f1ecfc;
-    --warning-border-color: #f59102;
-    --warning-bg-color: #fcf4dc;
-    --caution-border-color: #e30f2e;
-    --caution-bg-color: #fde4e8;
-    /* 表格 */
-    --table-head-text-color: #676767;
-    --table-head-bg-color: #b3e5fc;
-    --table-even-bg-color: #f6f6f7;
-    --table-line-color: #dfe2e5;
-    /* 列表 */
-    --list-marker-color: #166ff3;
-    --list-marker-bg-color: #f8f9fa;
-    --list-text-color: #000;
-    /* editor */
-    --theme-color: #166ff3;
-    --main-red: #ff6b6b;
-    --main-green: #2ed573;
-    --main-purple: #c94ae9;
-    --main-yellow: #f9b03d;
-    --light-color: #b2b2b2;
-    --theme-light-color: white;
-    --code-bg-color: #282c34;
-    --code-bg-color-light: #3d404e;
-    --code-bg-color-active: #414855;
-    --border-color: var(--theme-color);
-    --border: solid 0.5px var(--theme-color)94;
-
-    /* ---------------->> 悬浮 <<---------------- */
-    --item-bg-color-red: rgb(from var(--main-red) r g b / 0.22);
-    --item-bg-color-blue: rgb(from var(--theme-color) r g b / 0.26);
-    /* ---------------->> 阴影 <<---------------- */
-    --box-shadow: 0px 4px 4px rgba(0, 0, 0, .1);
-    --box-shadow-large: 0 8px 15px rgba(0, 0, 0, .3);
-    --drop-shadow: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.3));
-    --brightness: brightness(1);
-    /* ---------------->> 过渡 <<---------------- */
-    --transition: box-shadow 0.3s ease, transform 0.3s ease;
-    --bg-transition: background-color 0.5s ease;
-    /* ---------------->> 左到右透明渐变色 <<---------------- */
-    --gradient-color: linear-gradient(to right, var(--theme-light-color), rgba(255, 255, 255, 0));
-    /* ---------------->> 圆角 <<---------------- */
-    --radius-small: 5px;
-    --radius-large: 10px;
-    --radius-xlarge: 15px;
-    /* ---------------->> 云母 <<---------------- */
-    --mica-bg: rgba(255, 255, 255, 0.65);
-    --mica-blur: blur(12px) saturate(1.3);
-    --mica-border: 1px solid rgba(255, 255, 255, 0.15);
-    --mica-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.05),
-        inset 0 1px 0 rgba(255, 255, 255, 0.3);
-    --mica-transition: background-color 0.5s ease, box-shadow 0.5s ease;
-    /* ---------------->> Mermaid 图表，详情见 https://support.typoraio.cn/Diagram-Options/ <<---------------- */
-    /* 主题，可切换为 "default" "base" "dark" "forest" "neutral" "night" */
-    --mermaid-theme: default;
-    /* 字体 */
-    --mermaid-font-family: var(--main-font-family), "trebuchet ms", verdana, arial, sans-serif;
-    /* 时序图编号 or "off", see https://mermaid-js.github.io/mermaid/#/sequenceDiagram?id=sequencenumbers*/
-    --mermaid-sequence-numbers: on;
-    /* 线条风格 可切换为 "linear","basis","natural","step" */
-    --mermaid-flowchart-curve: linear;
-    /* 甘特图左侧边距 */
-    --mermaid--gantt-left-padding: 75;
-    /* 时序图主题 simple：普通 hand：手绘风格 */
-    --sequence-theme: hand;
-
-    /* 高亮 */
-    --highlight-bg-color: #a8f5a3;
-    --highlight-text-color: #393a49;
-
-
-    --yaml-text-color: #495057;
-    --yaml-bg-color: #f8f9fa;
-
+  --code-font: 'Hasklig', "Fira Code", Consolas, 'jinkai', Inconsolata, "Cascadia Code", Monaco, "Ubuntu Mono", monospace;
+  --main-font: 'Hasklig', 'jinkai', -apple-system, BlinkMacSystemFont, "Microsoft YaHei", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  /* basic color */
+  --bg-color: #fff;
+  --bg-secondary-color: #f8f9fa;
+  --text-color: #333;
+  /* main color */
+  --primary-color: #f06292;
+  --secondary-color: #fdebf1;
+  /* 右侧菜单 */
+  --menu-bg-color: #e3e7e7;
+  --ty-check-color: #00bb00;
+  --ty-delete1-color: #ff6b6b;
+  --ty-code-color: #c94ae9;
+  /* 引用 */
+  --quote-border-color: #f06292;
+  --quote-text-color: #6a737d;
+  --quote-bg-color: #fdebf1;
+  --note-border-color: #3e69d7;
+  --note-bg-color: #e9eaff;
+  --tip-border-color: #03b736;
+  --tip-bg-color: #d5efe9;
+  --important-border-color: #8250df;
+  --important-bg-color: #f1ecfc;
+  --warning-border-color: #f59102;
+  --warning-bg-color: #fcf4dc;
+  --caution-border-color: #e30f2e;
+  --caution-bg-color: #fde4e8;
+  /* 链接 */
+  --link-text-color: #f06292;
+  /* 脚注 */
+  --write-bg-color: #fff;
+  /* 高亮 */
+  --highlight-bg-color: #a8f5a3;
+  --highlight-text-color: #393a49;
+  /* Task List */
+  --task-list-done-color: #777;
+  /* TOC */
+  --toc-border-color: #9cdcfe;
+  /* 表格 */
+  --table-head-text-color: #676767;
+  --table-head-bg-color: #b3e5fc;
+  --table-even-bg-color: #f6f6f7;
+  --table-line-color: #dfe2e5;
+  /* code */
 }
