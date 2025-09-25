@@ -1,0 +1,116 @@
+/* 大纲 */
+/* #region */
+#typora-sidebar {
+    background-color: var(--bg-color);
+}
+
+.outline-content {
+    padding: 20px;
+    background-color: var(--bg-secondary-color);
+}
+
+.outline-label:hover {
+    text-decoration: none;
+}
+
+.outline-item:hover {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.outline-item:hover::before,
+.outline-item-active::before {
+    width: 6px;
+}
+
+.outline-item-active .outline-expander {
+    font-weight: bold;
+}
+
+/* #endregion */
+
+/* 搜索框 */
+/* #region */
+#file-library-search-panel {
+    border-bottom: none;
+}
+
+#file-library-search-panel input[type="search"] {
+    padding: 14px;
+    border-radius: 6px;
+    border-color: var(--primary-color);
+}
+
+/* #endregion */
+
+/* 左侧文件列表 */
+/* #region */
+#file-library-list-children {
+    padding: 0 14px;
+}
+
+.file-list-item.active {
+    border-radius: 10px;
+    background: var(--bg-secondary-color);
+}
+
+.file-list-item:hover {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+/* #endregion */
+
+/* 滚动条 */
+/* #region */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar:hover {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb:active {
+    border-radius: 5px;
+    background: var(--secondary-color);
+    width: 10px
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-secondary-color);
+}
+
+/* #endregion */
+
+/* 搜索框 Ctrl+F */
+/* #region */
+#md-searchpanel .btn label {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+div#md-searchpanel {
+    background: var(--bg-color);
+}
+
+#md-searchpanel .btn {
+    margin: 0 2px;
+    border-radius: 10px;
+}
+
+#md-searchpanel .btn:hover {
+    background: var(--secondary-color);
+}
+
+/* 查找和替换 */
+#md-searchpanel input {
+    border-radius: 6px;
+}
+
+#md-searchpanel input {
+    border-color: var(--primary-color);
+}
+
+/* #endregion */
