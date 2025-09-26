@@ -132,6 +132,12 @@ a {
   color: var(--link-text-color);
 }
 
+mark {
+  background-color: var(--mark-bg-color);
+  color: var(--mark-text-color);
+  font-weight: bold;
+}
+
 /* 脚注 */
 #write .md-footnote {
   background-color: var(--write-bg-color);

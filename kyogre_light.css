@@ -44,8 +44,8 @@
   /* 脚注 */
   --write-bg-color: #fff;
   /* 高亮 */
-  --highlight-bg-color: #a8f5a3;
-  --highlight-text-color: #393a49;
+  --mark-bg-color: #a8f5a3;
+  --mark-text-color: #393a49;
   /* Task List */
   --task-list-done-color: #777;
   /* TOC */
@@ -55,5 +55,4 @@
   --table-head-bg-color: #b3e5fc;
   --table-even-bg-color: #f6f6f7;
   --table-line-color: #dfe2e5;
-  /* code */
 }
