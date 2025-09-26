@@ -74,69 +74,91 @@ code {
 /* code block end */
 
 /* 配色方案 */
+/* 关键字 */
 .cm-s-inner .cm-keyword {
-  color: #a57fe7;
+  color: var(--code-keyword-color);
 }
 
+/* 函数声明 */
+.cm-s-inner .cm-def {
+  color: var(--code-def-color);
+}
+
+/* 运算符 */
 .cm-s-inner .cm-operator {
-  color: #89ddff;
+  color: var(--code-operator-color);
 }
 
+/* 局部变量 */
 .cm-s-inner .cm-variable-2 {
-  color: #e59835;
+  color: var(--code-variable2-color);
 }
 
+/* 三级变量, 如伪类 */
 .cm-s-inner .cm-type,
 .cm-s-inner .cm-variable-3 {
-  color: #ea6717;
+  color: var(--code-pseudo-class-color);
 }
 
+/* 终端 */
 .cm-s-inner .cm-builtin {
-  color: #ffcb6b;
+  color: var(--code-builtin-color);
 }
 
-.cm-s-inner .cm-atom {
-  color: #f78c6c;
-}
-
+/* 布尔值, 数字 */
+.cm-s-inner .cm-atom,
 .cm-s-inner .cm-number {
-  color: #ff5370;
+  color: var(--code-atom-color) !important;
 }
 
-.cm-s-inner .cm-def {
-  color: #e59835;
-}
-
+/* 字符串 */
 .cm-s-inner .cm-string {
-  color: #4ba036;
+  color: var(--code-string-color);
 }
 
+/* 二级字符串 如文本插值 `` */
 .cm-s-inner .cm-string-2 {
-  color: #f07178;
+  color: var(--code-string-color);
 }
 
+/* 注释 */
 .cm-s-inner .cm-comment {
-  color: #cdcdcd;
+  color: var(--code-comment-color);
 }
 
+/* 插值变量 */
 .cm-s-inner .cm-variable {
-  color: #42a5f5;
+  color: var(--code-string2-color);
 }
 
+/* 标签 */
+.cm-s-inner .cm-tag {
+  color: var(--code-tag-color);
+  background-color: transparent;
+}
+
+/* js 展开 */
 .cm-s-inner .cm-meta {
-  color: #ff6b6b;
+  color: var(--code-tag-color);
 }
 
+/* html 属性名颜色 */
 .cm-s-inner .cm-attribute {
-  color: #e26fff;
+  color: var(--code-builtin-color);
+  background-color: transparent;
 }
 
-.cm-s-inner .cm-property,
+/* js 对象键名 */
+.cm-s-inner .cm-property {
+  color: var(--code-def-color);
+}
+
+/* css类名颜色 */
 .cm-s-inner .cm-qualifier {
-  color: #ff6b6b;
+  color: var(--code-class-color);
 }
 
 .cm-s-inner .cm-error {
-  border: solid 0.25px #e9405c;
-  color: #fff;
+  color: var(--code-tag-color);
+  background-color: transparent;
 }

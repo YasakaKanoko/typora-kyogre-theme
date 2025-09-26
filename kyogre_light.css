@@ -1,6 +1,6 @@
 @import './kyogre/features/font.css';
 @import './kyogre/features/base.css';
-/* @import './kyogre/features/background.css'; */
+/* @import './kyogre/features/background.css';*/
 @import './kyogre/features/blockquote.css';
 @import './kyogre/features/editor.css';
 @import './kyogre/features/code.css';
@@ -44,8 +44,8 @@
   /* 脚注 */
   --write-bg-color: #fff;
   /* 高亮 */
-  --mark-bg-color: #a8f5a3;
-  --mark-text-color: #393a49;
+  --highlight-bg-color: #a8f5a3;
+  --highlight-text-color: #393a49;
   /* Task List */
   --task-list-done-color: #777;
   /* TOC */
@@ -55,4 +55,17 @@
   --table-head-bg-color: #b3e5fc;
   --table-even-bg-color: #f6f6f7;
   --table-line-color: #dfe2e5;
+  /* code */
+  --code-keyword-color: #8839ef;
+  --code-def-color: #7287fd;
+  --code-operator-color: #209fb5;
+  --code-variable2-color: #e64553;
+  --code-pseudo-class-color: #209fb5;
+  --code-builtin-color: #df8e1d;
+  --code-atom-color: #1e66f5;
+  --code-string-color: #40a02b;
+  --code-string2-color: #d20f39;
+  --code-comment-color: #afada2;
+  --code-tag-color: #179299;
+  --code-class-color: #df8e1d;
 }
