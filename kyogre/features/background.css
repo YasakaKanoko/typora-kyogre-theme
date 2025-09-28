@@ -1,7 +1,6 @@
 content {
-  /* 必应图床 */
-  /* background-image: url(https://api.timelessq.com/bing); */
-  background-image: url(../assets/1758799282.webp);
+  /* 背景图片 */
+  background-image: url(https://api.timelessq.com/bing);
   background-repeat: repeat;
   background-position: -52px;
 }
