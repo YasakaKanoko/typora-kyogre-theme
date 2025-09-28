@@ -1,1 +1,7 @@
 * text=auto eol=lf
+preview/ export-ignore
+README.md export-ignore
+.editorconfig export-ignore
+LICENSE export-ignore
+.gitignore export-ignore
+.gitattributes export-ignore
