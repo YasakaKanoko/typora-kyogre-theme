@@ -1,4 +1,5 @@
 * text=auto eol=lf
+
 preview/ export-ignore
 README.md export-ignore
 .editorconfig export-ignore
